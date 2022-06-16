@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DevInTheBasement_ep01.MainPage">
+			 
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <Image
+                Source="https://uiconstock.com/wp-content/uploads/2014/06/leonardo-tmnt-2014-wallpaper-hd-1600x12001.jpg"
+                SemanticProperties.Description="Leonardo Leader of the ninja turtles, staring sterningly at you"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <Image
+                x:Name="Shredder"
+                Source= 'https://www.omega-level.net/wp-content/uploads/2016/03/The-Shredder.jpg'
+                SemanticProperties.Description="Shredder Leader of the foot clan, staring sterningly at you"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="Leonardo"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label 
+                x:Name="Label"
+                Text="The Leader of the ninja turtles"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button 
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            <StackLayout>
+
+                <Label 
+                x:Name="sliderLabel"
+                Text=""
+                SemanticProperties.HeadingLevel="Level7"
+                SemanticProperties.Description="Slider Value"
+                FontSize="18"
+                HorizontalOptions="Center" />
+                <Slider x:Name="Slider"    
+                Maximum="360" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+       
+
+        </VerticalStackLayout>
+    </ScrollView>
+ 
+</ContentPage>
